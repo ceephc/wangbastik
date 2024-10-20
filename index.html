@@ -10,18 +10,16 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 
         body {
-       font-family: 'Poppins', sans-serif;
-       background: url('https://i.pinimg.com/enabled_lo/736x/84/2a/d6/842ad68b315b0f586c30b465221da609.jpg') no-repeat center center fixed;
-       background-size: cover;
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #ffffff 100%, #ffffff 0%);
+            background-attachment: fixed;
         }
         .container {
-            max-width: 800px;
-            margin: auto;
-            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
             padding: 20px;
-            box-shadow: 0px 0px 1rem rgba(255, 255, 255, 0.6);
-            border-radius: 8px;
-	}
+        }
         .card {
             display: flex;
             flex-direction: column;
@@ -51,23 +49,19 @@
             transform: translateY(-5px);
         }
         .btn-primary {
-            appearance: none;
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            padding: 10px 30px 10px 10px;
-            margin-bottom: 20px;
-            width: 100%;
-		color: #fff;
-            font-size: 16px;
-            font-weight: 600;
-            border: 2px solid #007BFF;
-            border-radius: 13px;
-            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%23007BFF" d="M7 10l5 5 5-5z"/></svg>') no-repeat;
-            background-position: right 10px center;
-            background-size: 20px;
-            background-color: #000;
+            background-color: black; /* Expanded button color */
+            color: white;
+            padding: 10px 20px; /* Reduced padding */
+            border: none;
+            border-radius: 0px;
             cursor: pointer;
             transition: all 0.3s ease;
+            font-weight: 500;
+            margin-top: 20px;
+            font-size: 0.8em; /* Reduced font size */
+            width: auto; /* Allow button to expand based on text */
+            display: inline-block; /* Allow button to expand based on text */
+            text-align: center; /* Center-align text */
         }
         .btn-primary:hover {
             background-color: red;
@@ -188,11 +182,11 @@
     <title>BASTIKWANG TV</title>
     <script async src="f0a6f.txt" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com/"></script>
-    <script src="jwpsrv.js"></script>
+    <script src="jwpsrv.jsS"></script>
     <script src="jwplayer.jsS"></script>
     <script src="channels.js"></script>
     
-    <link href="" rel="stylesheet">
+    <link href="all.min.css" rel="stylesheet">
    
 </head>
 <body class="bg-black text-white min-h-screen flex flex-col">
@@ -213,8 +207,8 @@
 		       <video id="player" controls autoplay style="width: 100%; max-width: 700px; height: auto;"></video>
            
         </div>
-    </div>
-    </main>
+
+
     <script>
         jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
         function loadStream(channelKey) {
