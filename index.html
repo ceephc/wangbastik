@@ -252,7 +252,7 @@
 </head>
 <body class="bg-black text-white min-h-screen flex flex-col">
    
-      <div id="currentChannel"></div>
+      <div id="channelSelect"></div>
     <div class="controls">
       <button onclick="changeChannel('previous')">Previous Channel</button>
       <button onclick="changeChannel('next')">Next Channel</button>
@@ -296,7 +296,7 @@
         }
         function populateChannelSelect() {
             const select = document.getElementById('channelSelect');
-		const currentChannelElement = document.getElementById('currentChannel');
+		const currentChannelElement = document.getElementById('channelSelect');
 
     function playChannel(index) {
       const channel = channels[index];
