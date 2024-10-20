@@ -205,6 +205,31 @@
             font-size: 1.2em;
             color: #fff;
         }
+	    .controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  button:hover {
+    background-color: #45a049;
+  }
+  #currentChannel {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+  }
     </style>
 
 <div class="container">
@@ -212,6 +237,7 @@
   <h2>We only re-share free Iptv links (such as public IPTV channels, live stream url, m3u8, ts, flv, rtsp, rtmp, txt ect.) which are already at public accessible websites. We DO NOT host or stream any videos on this website, We urge all copyright owners, to recognize that links contained within this site are located somewhere else on the web. Please direct all copyright infringement issues to the companies that host these files.</h2>
 
 <head>
+	
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BASTIKWANG TV</title>
@@ -226,6 +252,12 @@
 </head>
 <body class="bg-black text-white min-h-screen flex flex-col">
    
+      <div id="channelSelect"></div>
+    <div class="controls">
+      <button onclick="changeChannel('previous')">Previous Channel</button>
+      <button onclick="changeChannel('next')">Next Channel</button>
+    </div>
+  </div>
 
 
 
