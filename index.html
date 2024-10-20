@@ -305,19 +305,7 @@
                 const option = document.createElement('option');
                 option.value = key;
                 option.textContent = channels[key].name;
-                select.appendChild(option);
-		        function changeChannel(direction) {
-      if (direction === 'next') {
-        currentChannelIndex = (currentChannelIndex + 1) % channels.length;
-      } else if (direction === 'previous') {
-        currentChannelIndex = (currentChannelIndex - 1 + channels.length) % channels.length;
-      }
-      playChannel(currentChannelIndex);
-    }
-
-    // Initial channel load
-    playChannel(currentChannelIndex);
-  
+                select.appendChild(option);		        
             });
         }
         window.onload = function() {
@@ -343,6 +331,18 @@
     </script>
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
+	    function changeChannel(direction) {
+      if (direction === 'next') {
+        currentChannelIndex = (currentChannelIndex + 1) % channels.length;
+      } else if (direction === 'previous') {
+        currentChannelIndex = (currentChannelIndex - 1 + channels.length) % channels.length;
+      }
+      playChannel(currentChannelIndex);
+    }
+
+    // Initial channel load
+    playChannel(currentChannelIndex);
+  
     </script>
 </body>
 
